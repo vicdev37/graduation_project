@@ -7,7 +7,7 @@ function form() {
 	};
 
 
-	let form = document.getElementsByClassName('form, form-control' )[0],
+	let forms = document.querySelectorAll('.form, .main_form'),
 		input = document.getElementsByTagName('input'),
 		statusMessage = document.createElement('div');
 		statusMessage.classList.add('status');
@@ -57,8 +57,11 @@ function form() {
 	      .then(clearInput);
 	  });
 	}
-	sendForm(form);
-
+	
+	console.log(Array.from(forms))
+	Array.from(forms).forEach(form => {
+		sendForm(form);
+	})  
 }
 
 export default form;
