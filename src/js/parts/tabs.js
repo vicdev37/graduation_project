@@ -1,6 +1,6 @@
 function tabs() {
   const tab = document.querySelectorAll('.glazing_block'),
-    info = document.querySelector('.info-header'),
+    slickList = document.querySelector('.slick-list'),
     tabContent = document.querySelectorAll('.info-tabcontent');
 
 

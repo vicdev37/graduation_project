@@ -50,7 +50,12 @@ function modal() {
 		})
 	});
 
-	
+	function func() {
+		overlay.style.display = 'block';
+		popupCallback.style.display = 'block';
+	}
+
+	setTimeout(func, 61000);
 
 }
 

@@ -58,7 +58,7 @@ function form() {
 	  });
 	}
 	
-	console.log(Array.from(forms))
+	
 	Array.from(forms).forEach(form => {
 		sendForm(form);
 	})  
