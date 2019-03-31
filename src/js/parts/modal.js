@@ -1,7 +1,7 @@
 function modal() {
 	const headerBtn = document.querySelector('.header_btn'),
 		popupEngineer = document.querySelector('.popup_engineer'),
-		phoneLink = document.querySelector('.phone_link'),
+		phoneLink = document.querySelectorAll('.phone_link'),
 		popupCallback = document.querySelector('.popup'),
 		overlay = document.querySelector('.overlay'),
 		close = document.querySelectorAll('.popup_close'),
@@ -31,8 +31,11 @@ function modal() {
 	    styleToggle(popupEngineer);
 	  });
 
-	phoneLink.addEventListener('click', function (event) {
-		styleToggle(popupCallback);
+	Array.from(phoneLink).forEach(elem => {
+		elem.addEventListener('click', function (event) {
+					styleToggle(popupCallback);
+	});
+	
 	});
 	
 	Array.from(close).forEach(el => {
