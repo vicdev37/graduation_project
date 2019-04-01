@@ -6,6 +6,7 @@ import slider from './parts/slider';
 import tabs from './parts/tabs';
 import timer from './parts/timer';
 import modal from './parts/modal';
+import image from './parts/image';
 
 window.addEventListener('DOMContentLoaded', function () {
   'use strict';
@@ -17,6 +18,7 @@ window.addEventListener('DOMContentLoaded', function () {
   tabs();
   timer();
   modal();
+  image();
 });
 
 if ('NodeList' in window && !NodeList.prototype.forEach) {
