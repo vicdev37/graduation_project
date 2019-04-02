@@ -19,6 +19,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.4.0",
     "babel-loader": "^8.0.5",
+    "element-closest": "^3.0.1",
     "core-js": "^2.6.5",
     "es6-promise": "^4.2.6",
     "formdata-polyfill": "^3.0.17"
