@@ -30,3 +30,20 @@ if ('NodeList' in window && !NodeList.prototype.forEach) {
     }
   };
 }
+
+(function (e) {
+  e.closest = e.closest || function (css) {
+    var node = this;
+
+    while (node) {
+      if (node.matches(css)) return node;
+      else node = node.parentElement;
+    }
+    return null;
+  }
+})(Element.prototype);
+
+if (!Element.prototype.matches) {
+  Element.prototype.matches = Element.prototype.msMatchesSelector ||
+    Element.prototype.webkitMatchesSelector;
+}
